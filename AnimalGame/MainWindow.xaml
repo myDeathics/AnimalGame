@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AnimalGame"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="400">
-    <Grid x:Name="mainGrid">
+    <Grid x:Name="mainGrid" MouseDown="MouseHandler">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -36,6 +36,6 @@
         <TextBlock Grid.Column="2" HorizontalAlignment="Center" Margin="0,0,0,0" Text="?" VerticalAlignment="Center" FontSize="36"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Text="?" VerticalAlignment="Center" FontSize="36" RenderTransformOrigin="-3.776,0.116"/>
         <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36"/>
-
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="4" Text="0.0s" VerticalAlignment="Center" FontSize="40" RenderTransformOrigin="-2.289,0.376" Grid.ColumnSpan="2" x:Name="Timer"/>
     </Grid>
 </Window>
